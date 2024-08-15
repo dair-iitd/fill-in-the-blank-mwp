@@ -1,0 +1,30 @@
+Given a math QUE, you need to fill in the blank with a number, such that the answer of the question would be equal to given ANS
+Here is an example:
+
+QUE: Ben has four boxes with ten basketball cards in each box. Ben received ________ cards from his mother. If he gives 58 cards to his classmates, how many cards does he has left?
+ANS: 22
+Let's think step by step
+Ben has 4 x 10 = 40 basketball cards.
+Suppose Ben recieved x card from his mother.
+Then Ben has 40 + x cards.
+After giving away 58 cards, he has 40 + x - 58 = x - 18 cards left.
+The answer is x - 18 = 22.
+So x = 40.
+Ben therefore received 58 - 40 + 22 = 40 cards.
+The blank is "40".
+
+Here is another example:
+
+QUE: There are 15 trees in the grove. The workers will plant ________ more trees today. After they are done, how many trees would be there?
+ANS: 21
+Let's think step by step
+There are 15 trees originally.
+Then there were 21 trees after the workers planted trees.
+The workers must have planted 21 - 15 = 6 more trees.
+The blank is "6".
+
+Now answer this:
+
+Question: {new_question}
+Answer: {answer}
+Let's think step by step

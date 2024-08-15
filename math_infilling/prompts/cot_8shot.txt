@@ -1,0 +1,36 @@
+Fill in the blank given the question and answer examples below. Give your answer as either a number or a decimal (no fractions). Follow the format specified in the examples below:
+
+Q: There are 15 trees in the grove. Grove workers will plant _____ trees in the grove today. After they are done, how many trees would be there?
+A: 21 
+Answer: There are 15 trees originally, Then there were 21 trees after some more were planted. So there must have been 21 - 15 = 6 trees. The blank is 6.
+
+Q: If there are 3 cars in the parking lot and _____ more cars arrive, how many cars are in the parking lot?
+A: 5
+Answer: There are originally 3 cars. There are finally 5 cars, so 5 - 3 = 2 cars arrived. The blank is 2.
+
+Q: Leah had 32 chocolates and her sister had _____. If they ate 35, how many pieces do they have left in total?
+A: 39
+Answer: Originally, Leah had 32 chocolates. After eating 35, they had 39 chocolates left. So Leah's sister had 35 + 39 - 32 = 42 chocolates. The blank is 42.
+
+Q: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has _____ lollipops. How many lollipops did Jason give to Denny?
+A: 8
+Answer: Jason started with 20 lollipops. Then he gave Denny 8. So Jason has 20 - 8 = 12 lollipops. The blank is 12.
+
+Q: Shawn has five toys. For Christmas, he got _____ toys each from his mom and dad. How many toys does he have now?
+A: 9
+Answer: Shawn started with 5 toys. He got 9 - 5 = 4 toys from his mom and dad. Since they gave an equal number of toys, Shawn got 4 / 2 = 2 toys each. The blank is 2.
+
+Q: There were nine computers in the server room. _____ more computers were installed each day, from monday to thursday. How many computers are now in the server room?
+A: 29
+Answer: There were originally 9 computers. For each of 4 days, suppose n more computers were added. Since the total number of computers is 29, 9 + 4 * n = 29. So 4 * n = 29 - 9 = 20, and n = 20 / 4 = 5. The blank is 5.
+
+Q: Michael had 58 golf balls. On tuesday, he lost _____ golf balls. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?
+A: 33
+Answer: Michael started with 58 golf balls. After losing balls on tuesday and wednesday, he had 33. He lost 58 - 33 = 25 balls in total. Since he lost two on wednesday, he lost 25 - 2 = 23 on tuesday. The blank is 23.
+
+Q: Olivia has $23. She bought _____ bagels for $3 each. How much money does she have left?
+A: 8
+Answer: Olivia had 23 dollars. She spent 23 - 8 = 15 dollars on bagels. Each bagel was worth 3 dollars, so Olivia bought 15 / 3 = 5 bagels. The blank is 5.
+
+Q: {{question}}
+A: {{answer}}

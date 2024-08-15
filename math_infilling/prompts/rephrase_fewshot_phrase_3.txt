@@ -1,0 +1,54 @@
+Given blanked question Q, we need to complete it such that its answer is A.
+First guess the blank. Then rephrase the question to find x by putting value in A. Then solve it step-by-step. Follow the format specified in the examples below:
+
+Q: There are 15 trees in the grove. _____. After they are done, how many trees would be there?
+A: 21
+Guess: x trees were added.
+Rephrased: There are 15 trees in the grove. x trees were added. After they are done, there would be 21 trees. Find the value of x.
+Answer: There are 15 trees originally, Then there were 21 trees after some more were planted. So there must have been x = 21 - 15 = 6 trees. The answer is 6.
+
+Q: If there are 3 cars in the parking lot and _____, how many cars are in the parking lot?
+A: 5
+Guess: x more cars arrive
+Rephrased: If there are 3 cars in the parking lot and x more cars arrive, how many cars are in the parking lot?
+Answer: There are originally 3 cars. x more cars arrive. 3 + x = 5, so x = 5 - 3 = 2. The answer is 2.
+
+Q: Leah had 32 chocolates and _____. If they ate 35, how many pieces do they have left in total?
+A: 39
+Guess: her sister had x 
+Rephrased: Leah had 32 chocolates and her sister had x. If they ate 35, they had 39 pieces left in total. Find the value of x.
+Answer: Originally, Leah had 32 chocolates. Her sister had x. So in total they had 32 + x. After eating 35, they had 32 + x - 35 = x - 3. Since they had 39 chocolates left, x - 3 = 39, so x = 39 + 3 = 42. The answer is 42.
+
+Q: Jason had 20 lollipops. He gave Denny some lollipops. _____. How many lollipops did Jason give to Denny?
+A: 8
+Guess: Now Jason has x lollipops
+Rephrased: Jason had 20 lollipops. He gave Denny 8 lollipops. Now Jason has x lollipops. Find the value of x.
+Answer: Jason started with 20 lollipops. Then he gave Denny 8. So Jason has x = 20 - 8 = 12 lollipops. The answer is 12.
+
+Q: Shawn has five toys. For Christmas, _____. How many toys does he have now?
+A: 9
+Guess: he got x toys
+Rephrased: Shawn has five toys. For Christmas, he got x toys. He has 9 toys now. Find the value of x.
+Answer: Shawn started with 5 toys. If he got x toys he has 5 + x now. As he has 9 toys now, 5 + x = 9. So x = 9 - 5. The answer is 4.
+
+Q: There were nine computers in the server room. _____, from monday to thursday. How many computers are now in the server room?
+A: 29
+Guess: x computers were added
+Rephrased: There were nine computers in the server room. x computers were added, from monday to thursday. There are 29 computers now in the server room. Find the value of x.
+Answer: There were originally 9 computers. For each of 4 days, x more computers were added. Since the total number of computers is 29, 9 + 4 * x = 29. So 4 * x = 29 - 9 = 20, and x = 20 / 4 = 5. The answer is 5.
+
+Q: Michael had 58 golf balls. On tuesday, _____. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?
+A: 33
+Guess: he lost x golf balls
+Rephrased: Michael had 58 golf balls. On tuesday, he lost x golf balls. On wednesday, he lost 2 more. He had 33 golf balls at the end of wednesday. Find the value of x.
+Answer: Michael started with 58 golf balls. After losing x on tuesday, he had 58 - x. = 35. After losing 2 more, he had 58 - x - 2 = 56 - x golf balls. At the end of wednesday, he had 56 - x = 33 golf balls. So x = 56 - 33 = 23. The answer is 23.
+
+Q: Olivia has $23. _____. How much money does she have left?
+A: 8
+Guess: She spent x
+Rephrased: Olivia has $23. She spent x. She has $8 left. Find the value of x.
+Answer: Olivia had 23 dollars. Spending x will leave her with 23 - x = 8 dollars. So x = 23 - 8 = 15. The answer is 15.
+
+Q: {{question}}
+A: {{answer}}
+ 

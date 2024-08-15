@@ -1,0 +1,62 @@
+Given blanked question Q, we need to complete it such that its answer is A.
+First guess the blank by making use of unknown x. Then solve it to find x step-by-step. Check your work by substituting your answer in the blank, solving the question and comparing to the original answer. Follow the format specified in the examples below:
+
+Q: There are 15 trees in the grove. _____. After they are done, how many trees would be there?
+A: 21
+Guess: x trees were added. 
+Answer: There are 15 trees originally, Then there were 21 trees after some more were planted. So there must have been x = 21 - 15 = 6 trees. The answer is 6.
+Final question: There are 15 trees in the grove. 6 trees were added. After they are done, how many trees would be there?
+Check: There would be 15 + 6 = 21 trees in total. The original answer was 21. This matches the original answer.
+
+Q: If there are 3 cars in the parking lot and _____, how many cars are in the parking lot?
+A: 5
+Guess: x more cars arrive
+Answer: There are originally 3 cars. x more cars arrive. 3 + x = 5, so x = 5 - 3 = 2. The answer is 2.
+Final question: If there are 3 cars in the parking lot and 2 more cars arrive, how many cars are in the parking lot?
+Check: There would be 3 + 2 = 5 cars in the parking lot. The original answer was 5. This matches the original answer.
+
+Q: Leah had 32 chocolates and _____. If they ate 35, how many pieces do they have left in total?
+A: 39
+Guess: her sister had x 
+Answer: Originally, Leah had 32 chocolates. Her sister had x. So they had 32 + x chocolates in total. Then they ate 35. So 32 + x - 35 chocolates are left. So 32 + x - 35 = 39. so x = 39 + 3 = 42.
+Final question: Leah had 32 chocolates and her sister had 28. If they ate 35, how many pieces do they have left in total?
+Check: Leah and her sister have 32 + 28 = 60 chocolates in total. If they ate 35, they would have 60 - 35 = 25 chocolates left. The original answer was 39. This does not match the original answer.
+
+Q: Jason had 20 lollipops. He gave Denny some lollipops. _____. How many lollipops did Jason give to Denny?
+A: 8
+Guess: Now Jason has x lollipops
+Answer: Jason started with 20 lollipops. Then he gave Denny 8. So Jason has x = 20 - 8 = 12 lollipops. The answer is 8.
+Final question: Jason had 20 lollipops. He gave Denny some lollipops. Now Jason has 8 lollipops. How many lollipops did Jason give to Denny?
+Check: Jason had 20 lollipops. If he has 8 lollipops now, he gave denny 20 - 8 = 12. The original answer was 8. This does not match the original answer.
+
+Q: Shawn has five toys. For Christmas, _____. How many toys does he have now?
+A: 9
+Guess: he got x toys
+Answer: Shawn started with 5 toys. If he got x toys he has 5 + x now. As he has 9 toys now, 5 + x = 9. So x = 9 - 5. The answer is 4.
+Final question: Shawn has five toys. For Christmas, he got 4 toys. How many toys does he have now?
+Check: Shawn started with 5 toys and got 4 toys. He now has 5 + 4 = 9 toys. The original answer was 9. This matches the original answer.
+
+Q: There were nine computers in the server room. _____, from monday to thursday. How many computers are now in the server room?
+A: 29
+Guess: x computers were added
+Answer: There were originally 9 computers. For each of 4 days, x more computers were added. Since the total number of computers is 29, 9 + 4 * x = 29. So 4 * x = 29 - 9 = 20, and x = 4. The answer is 4.
+Final question: There were nine computers in the server room. 4 more computers were added, from monday to thursday. How many computers are now in the server room?
+Check: There were originally 9 computers. 4 computers each were installed for 4 days, so 4 * 4 = 16 computers were added. There are now 9 + 16 = 25 computers in the server room. The original answer was 29. This does not match the original answer.
+
+Q: Michael had 58 golf balls. On tuesday, _____. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?
+A: 33
+Guess: he lost x golf balls
+Answer: Michael started with 58 golf balls. After losing x on tuesday, he had 58 - x. = 35. After losing 2 more, he had 58 - x - 2 = 56 - x golf balls. At the end of wednesday, he had 56 - x = 33 golf balls. So x = 56 - 33 = 23. The answer is 23.
+Final question: Michael had 58 golf balls. On tuesday, he lost 23 golf balls. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?
+Check: Michael started with 58 balls. He lost 23 + 2 = 25 golf balls. He has 58 - 25 = 33 golf balls now. The original answer is 33. This matches the original answer.
+
+Q: Olivia has $23. _____. How much money does she have left?
+A: 8
+Guess: She spent x
+Answer: Olivia had 23 dollars. Spending x will leave her with 23 - x = 8 dollars. So x = 23 - 8 = 15. The answer is 15.
+Final question: Olivia has $23. She spent 15. How much money does she have left?
+Check: Olivia has 23 dollars. She spent 15 so she has 23 - 15 = 8 dollars left. The original answer was 8. This matches the original answer.
+
+Q: {{question}}
+A: {{answer}}
+Guess: 

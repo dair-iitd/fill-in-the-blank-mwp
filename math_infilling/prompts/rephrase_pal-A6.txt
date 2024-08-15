@@ -1,0 +1,41 @@
+Rephrase the given blanked question and answer pairs and then find the solution to the rephrased question. Write a python function that finds the value of x by solving step by step. Make sure you name your method finding_x. A few examples are given below.:
+
+Question: Ben has four boxes with ten basketball cards in each box. Ben received ______ cards from his mother. If he gives 58 cards to his classmates, how many cards does he has left?
+Answer: 22
+Rephrased: Ben has four boxes with ten basketball cards in each box. Ben received x cards from his mother. He gives 58 cards to his classmates. He has 22 cards left.
+Program:
+```python
+def finding_x():
+    num_boxes = 4
+    cards_per_box = 10
+    # cards_received_from_mother = x - This line is commented because x is unknown
+    # hence the variable cards_received_from_mother can't be used in R.H.S. of any calculation
+    cards_given_to_classmates = 58
+    cards_left = 22
+    cards_in_boxes = num_boxes * cards_per_box
+    total_cards_before_given_to_classmates = cards_given_to_classmates + cards_left
+    
+    cards_received_from_mother = total_cards_before_given_to_classmates - cards_in_boxes 
+    return cards_received_from_mother
+```
+
+Question: Olivia has $23. She bought _____ bagels for $3 each. How much money does she have left?
+Answer: 8 
+Rephrased: Olivia has $23. She bought x bagels for $3 each. She has $8 left. Find the value of x.
+Program:
+```python
+def finding_x():
+    money_initial = 23
+    # num_of_bagels = x - This line is commented because x is unknown
+    # hence the variable num_of_bagels can't be used in R.H.S. of any calculation
+    bagel_cost = 3
+    money_left = 8
+    money_spent = money_initial - money_left
+    
+    num_of_bagels = money_spent / bagel_cost
+    return num_of_bagels
+```
+
+Question: {{question}}
+Answer: {{answer}}
+Rephrased:

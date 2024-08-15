@@ -1,0 +1,56 @@
+You are given a math question with a blank value and an answer. Solve it step b step to find the value of blank. Strictly follow the format given in the examples below.
+
+Question: Ben has four boxes with ten basketball cards in each box. Ben received ______ cards from his mother. If he gives 58 cards to his classmates, how many cards does he has left?
+Answer: 22
+
+Peano solution:
+
+
+Let a be number of boxes [[var a]]. We have [[eq a = 4]].
+Let b be number of cards in each box [[var b]]. We have [[eq b = 10]].
+Let c be number of cards Ben initially has [[var c]]. We have [[eq c = a * b]].
+Let d be cards received from mother [[var d]].
+Let e be cards given to classmates [[var e]]. We have [[eq e = 58]].
+Let f be cards left [[var f]]. From given Answer, we have [[eq f = 22]]. 
+We have [[eq d = f + e - c]]
+The answer is the value of d [[answer d]].
+
+
+
+
+Question: Natalia sold _____ clips to her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?
+Answer: 72
+
+Peano solution:
+
+
+Let a be number of clips Natalia sold in April [[var a]].
+So number of clips Natalia sold in May are half of a.
+Let b be number of clips sold altogether [[var b]]. From given Answer, we have [[eq b = 72]].
+We have [[eq a = b / (1 + 1/2)]]
+The answer is the value of a [[answer a]].
+
+
+
+
+
+Question: There are 15 trees in the grove. Grove workers will plant _____ trees in the grove today. After they are done, how many trees would be there?
+Answer: 21
+
+Peano solution:
+
+
+Let a be the number of trees in the grove [[var a]]. We have [[eq a = 15]]. 
+Let b be the number of trees grove workers will plant [[var b]]. 
+Let c be the number of trees after they are done [[var c]]. From given Answer, we have [[eq c = 21]].
+We have [[eq b = c - a]].
+The answer is the value of b [[answer b]].
+
+
+
+
+
+Q: {{question}}
+A: {{answer}}
+
+Peano solution:

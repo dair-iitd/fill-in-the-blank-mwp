@@ -1,0 +1,13 @@
+Rephrase the following question such that finding the blanked out value becomes the objective of the question. A few examples are given below:
+
+Question: Natalia sold clips to _____ of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?
+Answer: 72
+Rephrased: Natalia sold clips to some of her friends in April, and then she sold half as many clips in May. If she sold 72 clips altogether in April and May, how many clips did she sell to her friends in April?
+
+Question: At Mario's barbershop, haircuts are 50% more expensive during the weekends. If Mario paid $_____ for his last haircut on Monday, how much he would have paid the day before?
+Answer: 27
+Rephrased: At Mario's barbershop, haircuts are 50% more expensive during the weekends. If Mario paid $27 for his haircut on Sunday, how much would he have paid for his haircut on Monday?
+
+Question: {{question}}
+Answer: {{answer}}
+Rephrased: 

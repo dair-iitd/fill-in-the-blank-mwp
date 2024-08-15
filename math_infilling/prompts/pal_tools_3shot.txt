@@ -1,0 +1,53 @@
+You are given a math question with a blank value and an answer. Write a python function called solution() using sympy that assumes the value of the blank is x and creates an equation in x that is solved by sympy.solve. Return the value of the blank. You may assume the neccessary libraries are imported. Strictly follow the format given in the examples below, as the method will be executed with the same name.
+
+Q: Ben has four boxes with ten basketball cards in each box. Ben received _____ cards from his mother. If he gives 58 cards to his classmates, how many cards does he has left?
+A: 22
+Program:
+```python
+def solution():
+    num_boxes = 4
+    cards_per_box = 10
+    total_cards_in_boxes = num_boxes * cards_per_box
+    cards_from_mother = x
+    cards_given_to_classmates = 58
+    cards_left = 22
+    
+    equation = Eq(cards_from_mother + total_cards_in_boxes, cards_given_to_classmates + cards_left)
+    blank = solve(equation)[0]
+
+    return blank
+```
+
+Q: Natalia sold clips to _____ of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?
+A: 72
+Program:
+```python
+def solution():
+    april_clips = x
+    may_clips = april_clips / 2
+    total_clips = 72
+    
+    equation = Eq(april_clips + may_clips, total_clips)
+    blank = solve(equation)[0]
+
+    return blank
+```
+
+Q: There are 15 trees in the grove. Grove workers will plant _____ trees in the grove today. After they are done, how many trees would be there?
+A: 21
+Program:
+```python
+def solution():
+    trees_init = 15
+    trees_planted = x
+    total_trees = 21
+    
+    equation = Eq(trees_init + trees_planted, total_trees)
+    blank = solve(equation)[0]
+
+    return blank
+```
+
+Q: {{question}}
+A: {{answer}}
+Program:

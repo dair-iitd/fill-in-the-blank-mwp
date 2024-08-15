@@ -1,0 +1,62 @@
+Rephrase the given blanked question and answer pairs and then solve it step b step to find the value of blank. Strictly follow the format given in the examples below.
+
+Question: Ben has four boxes with ten basketball cards in each box. Ben received ______ cards from his mother. If he gives 58 cards to his classmates, how many cards does he has left?
+Answer: 22
+
+Rephrased: Ben has four boxes with ten basketball cards in each box. Ben received x cards from his mother. If he gives 58 cards to his classmates, he has 22 cards left. Find the value of x.
+Peano solution:
+
+
+Let a be number of boxes [[var a]]. We have [[eq a = 4]].
+Let b be number of cards in each box [[var b]]. We have [[eq b = 10]].
+Let c be number of cards Ben initially has [[var c]]. We have [[eq c = a * b]].
+Let x be cards received from mother [[var x]].
+Let d be total cards with Ben [[var d]]. We have [[eq d = c + x]]
+Let e be cards given to classmates [[var e]]. We have [[eq e = 58]].
+Let f be cards left [[var f]]. From given Answer, we have [[eq f = 22]]. 
+As cards left are also total cards - cards given to classmates, we have [[eq f = d - e]]
+The answer will be the value of x [[answer x]].
+
+
+
+
+
+Question: Natalia sold _____ clips to her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?
+Answer: 72
+
+Rephrased: Natalia sold clips to x of her friends in April, and then she sold half as many clips in May. Find the value of x such that she sold a total of 72 clips altogether in April and May.
+Peano solution:
+
+
+Let x be number of clips Natalia sold in April [[var x]]
+Let a be number of clips Natalia sold in May [[var a]]. We have [[eq a = x / 2]].
+Let b be number of clips sold altogether [[var b]]. From given Answer, we have [[eq b = 72]].
+As clips sold altogether are also the sum of clips sold in April and May, we have [[eq b = x + a ]]
+The answer will be the value of x [[answer x]].
+
+
+
+
+
+Question: There are 15 trees in the grove. Grove workers will plant _____ trees in the grove today. After they are done, how many trees would be there?
+Answer: 21
+
+Rephrased: There are 15 trees in the grove. Grove workers will plant x trees in the grove today. After they are done, there would be 21 trees. Find the value of x.
+Peano solution:
+
+
+Let a be the number of trees in the grove [[var a]]. We have [[eq a = 15]]. 
+Let x be the number of trees grove workers will plant [[var x]].
+Let b be the number of trees after they are done [[var b]]. From given Answer, we have [[eq b = 21]].
+We have [[eq b = a + x]].
+The answer will be the value of x [[answer x]].
+
+
+
+
+
+
+Q: {{question}}
+A: {{answer}}
+
+Rephrased:

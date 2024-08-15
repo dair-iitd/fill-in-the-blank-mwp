@@ -1,0 +1,70 @@
+You are given a math question with a blank value and an answer. Write a python function called solution() using sympy that assumes the value of the blank is x and creates an equation in x that is solved by sympy.solve. Return the value of the blank. You may assume the neccessary libraries are imported. Strictly follow the format given in the examples below, as the method will be executed with the same name.
+
+Q: Ben has four boxes with ten basketball cards in each box. Ben received _____ cards from his mother. If he gives 58 cards to his classmates, how many cards does he has left?
+A: 22
+Program:
+```python
+def solution():
+    num_boxes = 4
+    cards_per_box = 10
+    total_cards_in_boxes = num_boxes * cards_per_box
+    cards_from_mother = x
+    cards_given_to_classmates = 58
+    cards_left = 22
+    
+    equation = Eq(cards_from_mother + total_cards_in_boxes, cards_given_to_classmates + cards_left)
+    blank = solve(equation)[0]
+
+    return blank
+```
+
+Q: Natalia sold clips to _____ of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?
+A: 72
+Program:
+```python
+def solution():
+    april_clips = x
+    may_clips = april_clips / 2
+    total_clips = 72
+    
+    equation = Eq(april_clips + may_clips, total_clips)
+    blank = solve(equation)[0]
+
+    return blank
+```
+
+Q: Shawn has five toys. For Christmas, he got _____ toys each from his mom and dad. How many toys does he have now?
+A: 9
+Program:
+```python
+def solution():
+    toys_init = 5
+    toys_from_mom = x
+    toys_from_dad = x
+    total_toys = 9
+    
+    equation = Eq(toys_init + toys_from_mom + toys_from_dad, total_toys)
+    blank = solve(equation)[0]
+
+    return blank
+```
+
+Q: Michael had 58 golf balls. On tuesday, he lost _____ golf balls. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?
+A: 33
+Program:
+```python
+def solution():
+    init_balls = 58
+    balls_lost_on_tuesday = x
+    balls_lost_on_wednesday = 2
+    total_balls_at_the_end = 33
+    
+    equation = Eq(init_balls - balls_lost_on_tuesday - balls_lost_on_wednesday , total_balls_at_the_end)
+    blank = solve(equation)[0]
+
+    return blank
+```
+
+Q: {{question}}
+A: {{answer}}
+Program:

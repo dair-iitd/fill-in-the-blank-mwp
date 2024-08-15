@@ -1,0 +1,45 @@
+Find a phrase to fill in the blank given the question and answer. Your answer should contain a decimal. Follow the format specified in the examples below and solve step by step:
+
+Q: There are 15 trees in the grove. _____. After they are done, how many trees would be there?
+A: 21 
+Answer: There are 15 trees originally, Then there are going to be 21 trees in the end. So there must have been 21 - 15 = 6 trees added.
+Phrase: Grove workers will plant 6 trees today
+
+Q: If there are 3 cars in the parking lot and _____, how many cars are in the parking lot?
+A: 5
+Answer: There are originally 3 cars. There are finally 5 cars, so 5 - 3 = 2 cars arrived.
+Phrase: 2 cars arrive
+
+Q: Leah had 32 chocolates and _____. If they ate 35, how many pieces do they have left in total?
+A: 39
+Answer: Originally, Leah had 32 chocolates. After eating 35, they had 39 chocolates left. Taking a guess that Leah's sister is the other person in blank, she would have 35 + 39 - 32 = 42 chocolates.
+Phrase: her sister had 42 chocolates
+
+Q: Jason had 20 lollipops. He gave Denny some lollipops. _____. How many lollipops did Jason give to Denny?
+A: 8
+Answer: Jason started with 20 lollipops. Then he gave Denny 8. So Jason has 20 - 8 = 12 lollipops.
+Phrase: Now Jason has 12 lollipops
+
+Q: Shawn has five toys. For Christmas, _____. How many toys does he have now?
+A: 9
+Answer: Shawn started with 5 toys. He got some toys for Christmas and has 9 now. So he must have got 9 - 5 = 4 toys.
+Phrase: he got 4 toys 
+
+Q: There were nine computers in the server room. _____, from monday to thursday. How many computers are now in the server room?
+A: 29
+Answer: There were originally 9 computers. For each of 4 days moday to thursday, taking a guess that n more computers were added. Since the total number of computers is 29, 9 + 4 * n = 29. So 4 * n = 29 - 9 = 20, and n = 20 / 4 = 5.
+Phrase: 5 more computers were installed each day
+
+Q: Michael had 58 golf balls. On tuesday, _____. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?
+A: 33
+Answer: Michael started with 58 golf balls. At the end he had 33. He lost 58 - 33 = 25 balls in total. Since he lost 2 on wednesday, he lost 25 - 2 = 23 on tuesday.
+Phrase: he lost 23 golf balls
+
+Q: Olivia has $23. _____. How much money does she have left?
+A: 8
+Answer: Olivia had 23 dollars. She spent 23 - 8 = 15 dollars.
+Phrase: She spent 15 dollars
+
+Q: {{question}}
+A: {{answer}}
+Answer: 

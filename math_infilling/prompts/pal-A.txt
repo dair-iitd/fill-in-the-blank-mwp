@@ -1,0 +1,46 @@
+Given blanked question and answer pairs, write a python function that finds the value of the blank by solving step by step. Make sure you name your method solution. A few examples are given below.:
+
+Question: Ben has four boxes with ten basketball cards in each box. Ben received ______ cards from his mother. If he gives 58 cards to his classmates, how many cards does he has left?
+Answer: 22
+Program:
+def solution():
+    num_boxes = 4
+    basketball_cards_per_box = 10
+    basketball_cards_in_boxes = num_boxes * basketball_cards_per_box
+    cards_given_to_classmates = 58
+    cards_left = 22
+
+    """
+    Comments on solving step-by-step
+    equation: cards_received_from_mother + basketball_cards_in_boxes = cards_given_to_classmates + cards_left
+    simplifying:
+    """
+
+    cards_received_from_mother = cards_given_to_classmates + cards_left - basketball_cards_in_boxes
+
+    return cards_received_from_mother
+
+
+Question: Natalia sold ______ clips to her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?
+Answer: 72
+Program:
+def solution():
+    total_clips_sold = 72
+    
+    """
+    Comments on solving step-by-step
+    equation: clips_sold_in_april + clips_sold_in_may = total_clips_sold
+    given that clips_sold_in_may = 1/2 * clips_sold_in_april
+    clips_sold_in_april + 1/2 * clips_sold_in_may = total_clips_sold
+    3/2 * clips_sold_in_april = total_clips_sold
+    simplifying:
+    """
+
+    clips_sold_in_april = 2 * total_clips_sold / 3
+
+    return clips_sold_in_april
+
+
+Question: {{question}}
+Answer: {{answer}}
+Program:

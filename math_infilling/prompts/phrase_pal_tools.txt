@@ -1,0 +1,74 @@
+Given blanked question Q, we need to complete it such that its answer is A.
+First, guess the blank by making use of unknown x. Then write a Python function called solution() using sympy that assumes the value of the blank is x and creates an equation in x that is solved by sympy.solve. Return the value of the blank. You may assume the necessary libraries are imported. Strictly follow the format given in the examples below, as the method will be executed with the same name.
+
+Q: Ben has four boxes with ten basketball cards in each box. _____. If he gives 58 cards to his classmates, how many cards does he have left?
+A: 22
+Guess: He gets x more cards
+Program:
+```python
+def solution():
+    num_boxes = 4
+    cards_per_box = 10
+    total_cards_in_boxes = num_boxes * cards_per_box
+    cards_got = x
+    cards_given_to_classmates = 58
+    cards_left = 22
+    
+    equation = Eq(cards_got + total_cards_in_boxes, cards_given_to_classmates + cards_left)
+    blank = solve(equation)[0]
+
+    return blank
+```
+
+Q: Natalia sold 48 clips to her friends in April, _____. How many clips did Natalia sell altogether in April and May?
+A: 72
+Guess: and sold x in May
+Program:
+```python
+def solution():
+    april_clips = 48
+    may_clips = x
+    total_clips = 72
+    
+    equation = Eq(april_clips + may_clips, total_clips)
+    blank = solve(equation)[0]
+
+    return blank
+```
+
+Q: Shawn has five toys. For Christmas, _____. How many toys does he have now?
+A: 9
+Guess: he got x toys
+Program:
+```python
+def solution():
+    toys_init = 5
+    toys_got = x
+    total_toys = 9
+    
+    equation = Eq(toys_init + toys_got, total_toys)
+    blank = solve(equation)[0]
+
+    return blank
+```
+
+Q: Michael had 58 golf balls. On tuesday, _____. On wednesday, he lost 2 more. How many golf balls did he have at the end of wednesday?
+A: 33
+Guess : he lost x balls
+Program:
+```python
+def solution():
+    init_balls = 58
+    balls_lost_on_tuesday = x
+    balls_lost_on_wednesday = 2
+    total_balls_at_the_end = 33
+    
+    equation = Eq(init_balls - balls_lost_on_tuesday - balls_lost_on_wednesday , total_balls_at_the_end)
+    blank = solve(equation)[0]
+
+    return blank
+```
+
+Q: {{question}}
+A: {{answer}}
+Guess:
